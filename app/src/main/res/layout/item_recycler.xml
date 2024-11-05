@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/ivGambarWayang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/android"/>
+
+    <TextView
+        android:id="@+id/tvNamaWayang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="namaWayang"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivGambarWayang"/>
+
+    <TextView
+        android:id="@+id/tvKarakterWayang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#00A0A0"
+        android:text="karakterWayang"
+        app:layout_constraintStart_toEndOf="@id/ivGambarWayang"
+        app:layout_constraintTop_toBottomOf="@+id/tvNamaWayang"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvDeskripsiWayang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="deskripsiWayang"
+        app:layout_constraintTop_toBottomOf="@id/tvKarakterWayang"
+        app:layout_constraintStart_toEndOf="@id/ivGambarWayang"
+        android:layout_marginTop="24dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

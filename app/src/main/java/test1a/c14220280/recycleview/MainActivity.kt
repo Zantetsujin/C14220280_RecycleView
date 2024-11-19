@@ -73,10 +73,10 @@ class MainActivity : AppCompatActivity() {
 
         adapterWayang.setOnItemClickCallBack(object : adapterRecView.OnItemClickCallBack {
             override fun onItemClicked(data: wayang) {
-                Toast.makeText(this@MainActivity, data.nama, Toast.LENGTH_SHORT).show()
-//                val intent = Intent(this@MainActivity, detWayang::class.java)
-//                intent.putExtra("kirimData", data)
-//                startActivity(intent)
+//                Toast.makeText(this@MainActivity, data.nama, Toast.LENGTH_SHORT).show()
+                val intent = Intent(this@MainActivity, detWayang::class.java)
+                intent.putExtra("kirimData", data)
+                startActivity(intent)
             }
         })
 

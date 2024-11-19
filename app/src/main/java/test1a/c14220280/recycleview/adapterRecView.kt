@@ -65,8 +65,8 @@ class adapterRecView(private val listWayang:ArrayList<wayang>):
             .into(holder._gambarWayang)
 
         holder._gambarWayang.setOnClickListener() {
-//            Toast.makeText(holder.itemView.context, wayang.nama, Toast.LENGTH_SHORT).show()
-            onItemClickCallBack.onItemClicked(wayang)
+            Toast.makeText(holder.itemView.context, wayang.nama, Toast.LENGTH_SHORT).show()
+//            onItemClickCallBack.onItemClicked(wayang)
         }
     }
 }
